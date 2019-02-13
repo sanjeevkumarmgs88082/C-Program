@@ -1,0 +1,42 @@
+//WAP a program in c to implementation of FIRST COME FISRT SERVE algorithm in Operating System.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+//taking the variable to perform the FCFS algorithm
+    int a[100],n,i;
+
+//Taking the size of process
+
+    printf("Enter the size of an Process");
+    scanf("%d",&n);
+
+//taking the processes
+
+    for(i=0;i<n;i++)
+        {
+            printf("Enter the %d process",i+1);
+            scanf("%d",&a[i]);
+        }
+
+//Print all the process to be excuted
+
+    for(i=0;i<n;i++)
+        {
+        printf("\nYour %d Process is %d\n",i+1,a[i]);
+        }
+
+// All the processes are Excute one by one
+
+    printf("All the process are Excuted Successfully\n");
+
+    for(i=0;i<n;i++)
+        {
+        printf("\nYour %d Process %d is successfully Excuted by the Operating System\n",i+1,a[i]);
+        }
+
+    return 0;
+}
